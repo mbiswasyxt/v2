@@ -1,0 +1,94 @@
+header > nav {
+    /* To center it within the body horizontally */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    column-gap: 30px; /* Gap between the links in desktop version */
+    row-gap: 10px; /* Gap between the links in hamburger menu */
+}
+
+header > .logo {
+    height: min(45px, 13vw); /* It'll be 50px high on wider screens and 13vw on smaller ones */
+    mix-blend-mode: multiply;
+}
+
+header>nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    justify-content: start;
+    width: 100%;
+  }
+
+  header>nav li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header>nav ul li a {
+    color: var(--brand-primary-color);
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  header>nav ul li a:hover {
+    color: var(--brand-accent-color);
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+
+
+#global-nav-menu-button {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 1.6rem;
+}
+
+body > header > form > input[type=search],
+body > header > form > button {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: var(--default-border-radius);
+    border: 1px solid #ccc;
+}
+
+body > header > form > input[type=search] {
+    width: 15rem;
+}
+
+body > header > form > button {
+    margin-left: 0.5rem;
+}
+
+header > form {
+    display: flex;
+    border-radius: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* If the viewport width is small, hide the navigation and searchbar */
+    header > nav{
+        display: none;
+    }
+
+    header > form {
+        display: none;
+  }
+
+    /* And just show the hamburger menu */
+    .hamburgerMenu {
+        display: block;
+    }
+}

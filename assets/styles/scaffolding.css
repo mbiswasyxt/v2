@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* calc w & h inclusive of padding */
+}
+
+/* --- Scaffolding --- */
+html {
+  font-size: var(--base-font-size);
+  font-family: var(--default-text-font);
+  font-weight: var(--default-font-weight);
+
+  background-color: var(--brand-neutral-color);
+}
+
+
+header,
+main,
+footer {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  width: auto;
+  max-width: var(--page-width);
+
+  /* Debug stuff */
+  border: 1px solid blue;
+
+  /* @media (max-width: 430px) {
+    padding: 2rem 1rem 2rem;
+    --base-font-size: 12px;
+  } */
+}
+
+body {
+  line-height: var(--default-line-height);
+}
+
+/* Header Section */
+header {
+  background-color: var(--brand-tertiary-color);
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 3px solid var(--brand-neutral-dark-color);
+}
+
+.hidden {
+  display: none;
+}

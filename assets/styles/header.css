@@ -1,0 +1,130 @@
+header {
+  display: flex;
+}
+header>nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  justify-content: start;
+  width: 100%;
+  direction: ltr;
+}
+
+header>nav li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+header>nav ul li a {
+  color: var(--brand-primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header>nav ul li a:hover {
+  color: var(--brand-accent-color);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#global-nav-logo {
+  min-width: 150px;
+}
+
+header>nav li:nth-last-child(2) {
+  margin-inline-start: auto;
+}
+
+.search-bar {
+  /* display: flex; */
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  border-radius: var(--default-border-radius);
+  border: 1px solid #ccc;
+  width: 15rem;
+}
+
+.search-bar button {
+  background-color: var(--brand-primary-color);
+  color: var(--brand-neutral-color);
+  border: none;
+  border-radius: var(--default-border-radius);
+  cursor: pointer;
+}
+
+/* Nav Bar Stuff */
+#global-nav-menu-button {
+    display: none;
+}
+
+#global-nav h2 {
+    display: none;
+}
+
+
+/* --- 1075px Seems to be a good break point for this header --- */
+@media (max-width: 750px) {
+/* Hide Hamburger Button */
+  #global-nav.menu-closed {
+    display: none;
+  }
+  #global-nav.menu-openul > li a:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 750px) {
+  /* Show hamburger button */
+  #global-nav-menu-button {
+    display: contents;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    float: right;
+  }
+
+  #global-nav-logo {
+    display: block;
+    float: left;
+    min-width: 75px;
+    max-width: 75px;
+  }
+
+  .search-bar input {
+    width: 7rem;
+  }
+
+  #global-nav > ul > li:nth-child(1) {
+    display: inline;
+  }
+
+  #global-nav ul {
+    list-style: none;
+    display: inline;
+  }
+
+    #global-nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    #global-nav ul > li {
+      display: block;
+      padding: 0 48px 0 0;
+      font-weight: 500;
+    }
+    #global-nav ul > li > a {
+      text-decoration: none;
+    }
+    #global-nav ul > li a:hover {
+      text-decoration: underline;
+    }
+  }

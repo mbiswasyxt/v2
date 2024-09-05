@@ -1,0 +1,26 @@
+:root {
+  --font-family-sans-serif: system-ui, sans-serif;
+  --font-family-serif: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+
+  --base-font-size: 16px;
+  --default-font-weight: 200;
+  --default-line-height: 1.5rem;
+  --default-text-font: var(--font-family-sans-serif, system-ui);
+
+  --default-border-radius: 4px;
+  --page-width: 1200px;
+
+
+  /* Brand Colors */
+  --brand-color-navy: rgb(32, 46, 91);
+  --brand-color-orange: rgb(206, 119, 69);
+  --brand-color-yellow: rgba(247, 206, 70, 0.25);
+
+  --brand-primary-color: var(--brand-color-navy);
+  --brand-accent-color: var(--brand-color-orange);
+  --brand-tertiary-color: var(--brand-color-yellow);
+  --brand-primary-text-color: black;
+  --brand-accent-text-color: rgb(191, 31, 31);
+  --brand-neutral-color: rgb(247, 247, 247);
+  --brand-neutral-dark-color: rgb(172, 172, 172);
+}

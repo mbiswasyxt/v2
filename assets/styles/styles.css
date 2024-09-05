@@ -1,0 +1,41 @@
+/* Base Style Theme */
+
+@import url("reset.css");
+@import url("variables.css");
+@import url("scaffolding.css");
+@import url("body-elements.css");
+@import url("header.css");
+@import url("cards--2.css");
+
+
+
+
+
+
+
+
+
+
+
+/* Hero Section */
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6");
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  /* color: white; */
+  padding: 60px;
+  /* height: 100vh; */
+  }
+
+/* .hero h1 {
+  font-size: 2.5em;
+  max-width: 50%;
+} */
+
+.logo {
+  width: 150px;
+}
+
+
+/* -------------------------------------------------------------- */

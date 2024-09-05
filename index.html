@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capital Fins Bank</title>
+
+  <!-- <link rel="stylesheet" href="./assets/styles/reset.css"> -->
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- TODO: NEVER LEAVE INLINE JS !!!!!!!!! -->
+  <script>
+    document.onkeypress = function (e) {
+      e.charCode === 111 ? toggleGlobalNav() : null
+    };
+
+    document.onkeyup = function (e) {
+      e.key === "Escape" ? toggleGlobalNav() : null
+    };
+
+    function toggleGlobalNav() {
+      var globalNav = document.getElementById("global-nav")
+
+      // Todo: toggle burger and fries &#127839;
+      globalNav.classList.toggle("menu-open")
+      globalNav.classList.toggle("menu-closed")
+    }
+  </script>
+
+</head>
+
+<body>
+  <header>
+
+    <a href="#" id="global-nav-logo">
+      <img src="./assets/images/capital-bank-logo-horizontal-small.png" alt="Capital Fins Bank Logo" class="logo"
+        aria-label="Capital Fins Bank Logo">
+    </a>
+
+    <nav id="global-nav" class="menu-closed" aria-label="Main Navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Personal Banking</a></li>
+        <li><a href="#">Wealth</a></li>
+        <li><a href="#">Learn</a></li>
+        <li><a href="#" aria-label="Contact Us">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <form aria-label="Search Form" class="search-bar">
+      <input type="search" placeholder="Search Nearest Branch, ATM or Advisors"
+        aria-label="Search Nearest Branch, ATM or Advisors">
+      <button type="submit">Search</button>
+    </form>
+    <button onclick="toggleGlobalNav()" id="global-nav-menu-button">&#127828;</button>
+
+  </header>
+
+  <main>
+    <section class="hero">
+      <article>
+        <h1>Empowering Your Financial Journey with the Nation's Most Trusted Bank.</h1>
+        <p>Schedule an Appointment with our Wealth Expert</p>
+        <p>Call us at 1800-CAP-FINS</p><!-- TODO: make TEl link -->
+      </article>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="cards">
+      <h2>Our Popular Products</h2>
+
+      <!-- TODO: Make into Product Cards -->
+      <article>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Free Checking" aria-label="Free Checking Image" class="product-image">
+        </figure>
+
+        <h3>Free Checking</h3>
+        <p>A simple and easy checking account packed with features and benefits.</p>
+        <p><a href="#" class="button" aria-label="Learn More About Free Checking">Learn More</a></p>
+      </article>
+
+      <article>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1592495989226-03f88104f8cc?q=80&w=3012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Wealth Management" aria-label="Wealth Management Image" class="product-image">
+          <!-- <figcaption>
+          </figcaption> -->
+        </figure>
+        <h3>Wealth Management</h3>
+        <p>Your financial journey begins with a trusted partner.</p>
+        <p><a href="#" class="button" aria-label="Learn More About Wealth Management">Learn More</a></p>
+      </article>
+
+
+      <article>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1634757439914-23b8acb9d411?q=80&w=2811&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Loans and Financing" aria-label="Loans and Financing Image" class="product-image">
+        </figure>
+        <h3>Loans and Financing</h3>
+        <p>Whether it's a home, car, education, or your dream vacation, we're with you every step of the
+          way.</p>
+        <p><a href="#" class="button" aria-label="Learn More About Loans and Financing">Learn More</a></p>
+      </article>
+
+
+    </section>
+
+    <!-- Insights Section -->
+    <section class="cards">
+      <h2>Insights</h2>
+      <article>
+        <img
+          src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Article 1 Image" aria-label="Article 1 Image">
+        <h3>Article 1</h3>
+        <a href="#" class="cta-button" aria-label="Read More About Article 1">Read More</a>
+      </article>
+      <article>
+        <img
+          src="https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Article 2 Image" aria-label="Article 2 Image">
+        <h3>Article 2</h3>
+        <a href="#" class="cta-button" aria-label="Read More About Article 2">Read More</a>
+      </article>
+      <article>
+        <img
+          src="https://images.unsplash.com/photo-1457992666942-6e060d53be8c?q=80&w=2846&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Article 3 Image" aria-label="Article 3 Image">
+        <h3>Article 3</h3>
+        <a href="#" class="cta-button" aria-label="Read More About Article 3">Read More</a>
+      </article>
+    </section>
+
+    <!-- Wealth Management Locator Section -->
+    <section class="locator"
+      style="background-image: url('https://images.unsplash.com/photo-1519219788971-8d9797e0928e?q=80&w=2888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+      <h2>Start Your Financial Journey Today</h2>
+      <div class="search-container">
+        <input type="text" placeholder="Yext AI Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Footer Navigation">
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms Of Service</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Branch & ATM Locator</a></li>
+        <li><a href="#">Investor Relations</a></li>
+        <li><a href="#">Media Newsroom</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Social</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2024 Capital Fins Bank. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>
