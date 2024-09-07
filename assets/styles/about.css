@@ -1,0 +1,9 @@
+.about{
+    padding: 2em 1em;
+    text-align: center;
+    /* text-align: justify; */
+    .cta-button{
+        display: block;
+    }
+    
+}

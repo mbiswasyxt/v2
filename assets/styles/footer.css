@@ -1,0 +1,7 @@
+footer{
+    padding: 2rem;
+    background-color: var(--brand-tertiary-color);
+ul {
+    column-count: 3;
+    column-gap:2rem;
+}}
