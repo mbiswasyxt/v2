@@ -1,0 +1,24 @@
+.locator{
+    
+    background-position: bottom;
+    height: 15rem;
+    .search-container{
+        text-align: center;
+        input {
+            padding: 0.5rem;
+            border-radius: var(--default-border-radius);
+            border: 1px solid #ccc;
+            width: 15rem;
+          }
+          
+          button {
+            background-color: var(--brand-primary-color);
+            color: var(--brand-neutral-color);
+            border: none;
+            border-radius: var(--default-border-radius);
+            cursor: pointer;
+          }
+
+    }
+    
+}
